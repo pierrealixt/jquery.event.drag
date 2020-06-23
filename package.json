@@ -2,7 +2,10 @@
   "name": "jquery.event.drag",
   "version": "2.2.2",
   "description": "Drag events for jQuery, from https://github.com/threedubmedia/jquery.threedubmedia",
-  "main": "jquery.event.drag.live.js",
+  "main": "dist/jquery.event.drag.js",
+  "scripts": {
+    "build": " npx babel src --out-dir dist/ --presets=@babel/preset-env --plugins=@babel/plugin-transform-modules-umd"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/devongovett/jquery.event.drag.git"
@@ -12,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/devongovett/jquery.threedubmedia/issues"
   },
-  "homepage": "https://github.com/devongovett/jquery.threedubmedia"
+  "homepage": "https://github.com/devongovett/jquery.threedubmedia",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.10.3",
+    "@babel/core": "^7.10.3",
+    "@babel/plugin-transform-modules-umd": "^7.10.1",
+    "@babel/preset-env": "^7.10.3"
+  }
 }
