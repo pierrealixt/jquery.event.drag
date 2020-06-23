@@ -4,7 +4,7 @@
   "description": "Drag events for jQuery, from https://github.com/threedubmedia/jquery.threedubmedia",
   "main": "dist/jquery.event.drag.js",
   "scripts": {
-    "build": " npx babel src --out-dir dist/ --presets=@babel/preset-env --plugins=@babel/plugin-transform-modules-umd"
+    "build": " npx babel src --out-dir dist/ --presets=@babel/preset-env"
   },
   "repository": {
     "type": "git",
